@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-const peopleRouter = require('./methods-public/routes/people')
-const authRouter = require('./methods-public/routes/auth')
+const peopleRouter = require('./routes/people')
+const authRouter = require('./routes/auth')
 
 app.use(express.static('./methods-public'))
 app.use(express.urlencoded({ extended: false }))
